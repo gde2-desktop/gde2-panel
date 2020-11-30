@@ -140,7 +140,7 @@ panel_context_menu_show_about_dialog (GtkWidget *menuitem)
 		      "program-name",  _("The GDE2 Panel"),
 		      "version", VERSION,
 		      "copyright", "Copyright \xc2\xa9 1997-2003 Free Software Foundation, Inc.\n"
-		                   "Copyright \xc2\xa9 2011-2014 MATE Developers."
+		                   "Copyright \xc2\xa9 2011-2014 MATE Developers.\n"
 		                   "Copyright \xc2\xa9 2020 GDE2 Project.",
 		      "comments", _("This program is responsible for launching other "
 				    "applications and provides useful utilities."),
