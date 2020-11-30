@@ -1,4 +1,4 @@
-AC_INIT([gde2-panel], [1.14.2], [https://github.com/gde2-desktop/gde2-panel/issues],
+AC_INIT([gde2-panel], [1.1.0], [https://github.com/gde2-desktop/gde2-panel/issues],
     [gde2-panel], [http://www.gde2-desktop.org])
 AC_CONFIG_HEADERS(config.h)
 AM_INIT_AUTOMAKE([1.9 no-dist-gzip dist-xz tar-ustar -Wno-portability check-news])
@@ -59,7 +59,7 @@ fi
 AC_CHECK_HEADERS(crt_externs.h)
 AC_CHECK_FUNCS(_NSGetEnviron)
 
-LIBGDE2_DESKTOP_REQUIRED=1.9.3
+LIBGDE2_DESKTOP_REQUIRED=1.1.0
 GDK_PIXBUF_REQUIRED=2.7.1
 PANGO_REQUIRED=1.15.4
 GLIB_REQUIRED=2.36
