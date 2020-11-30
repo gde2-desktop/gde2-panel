@@ -1,0 +1,50 @@
+[Applet Factory]
+Id=WnckletFactory
+InProcess=@IN_PROCESS@
+Location=@LOCATION@
+_Name=Window Navigation Applet Factory
+_Description=Factory for the window navigation related applets
+
+[WindowMenuApplet]
+_Name=Window Selector
+_Description=Switch between open windows using a menu
+Icon=gde2-panel-window-menu
+Gde2ComponentId=OAFIID:GDE2_WindowMenuApplet;
+X-GDE2-Bugzilla-Bugzilla=GDE2
+X-GDE2-Bugzilla-Product=gde2-panel
+X-GDE2-Bugzilla-Component=window selector
+X-GDE2-Bugzilla-Version=@VERSION@
+X-GDE2-Bugzilla-OtherBinaries=wnck-applet
+
+[WorkspaceSwitcherApplet]
+_Name=Workspace Switcher
+_Description=Switch between workspaces
+Icon=gde2-panel-workspace-switcher
+Gde2ComponentId=OAFIID:GDE2_WorkspaceSwitcherApplet;OAFIID:GDE2_PagerApplet;
+X-GDE2-Bugzilla-Bugzilla=GDE2
+X-GDE2-Bugzilla-Product=gde2-panel
+X-GDE2-Bugzilla-Component=workspace switcher
+X-GDE2-Bugzilla-Version=@VERSION@
+X-GDE2-Bugzilla-OtherBinaries=wnck-applet
+
+[WindowListApplet]
+_Name=Window List
+_Description=Switch between open windows using buttons
+Icon=gde2-panel-window-list
+Gde2ComponentId=OAFIID:GDE2_TasklistApplet;OAFIID:GDE2_WindowListApplet;
+X-GDE2-Bugzilla-Bugzilla=GDE2
+X-GDE2-Bugzilla-Product=gde2-panel
+X-GDE2-Bugzilla-Component=window list
+X-GDE2-Bugzilla-Version=@VERSION@
+X-GDE2-Bugzilla-OtherBinaries=wnck-applet
+
+[ShowDesktopApplet]
+_Name=Show Desktop
+_Description=Hide application windows and show the desktop
+Icon=user-desktop
+Gde2ComponentId=OAFIID:GDE2_ShowDesktopApplet;
+X-GDE2-Bugzilla-Bugzilla=GDE2
+X-GDE2-Bugzilla-Product=gde2-panel
+X-GDE2-Bugzilla-Component=Show Desktop Button
+X-GDE2-Bugzilla-Version=@VERSION@
+X-GDE2-Bugzilla-OtherBinaries=wnck-applet

@@ -1,0 +1,3 @@
+#include <gde2-panel-applet.h>
+
+gde2_panel_applet_get_type

@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libgde2-panel-applet-4
+Description: libgde2-panel-applet-4
+Requires: glib-2.0 gio-2.0 gtk+-@GTK_API_VERSION@
+Version: @VERSION@
+Libs: ${pc_top_builddir}/${pcfiledir}/libgde2-panel-applet-4.la
+Cflags: -I${pc_top_builddir}/${pcfiledir}

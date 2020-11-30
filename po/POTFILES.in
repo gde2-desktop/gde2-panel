@@ -1,0 +1,74 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+[encoding: UTF-8]
+applets/clock/calendar-window.c
+applets/clock/clock.c
+[type: gettext/glade]applets/clock/clock.ui
+applets/clock/clock-location.c
+applets/clock/clock-location-tile.c
+applets/clock/clock-utils.c
+[type: gettext/gsettings]applets/clock/org.gde2.panel.applet.clock.gschema.xml.in
+[type: gettext/ini]applets/clock/org.gde2.panel.ClockApplet.gde2-panel-applet.in.in
+applets/fish/fish.c
+[type: gettext/glade]applets/fish/fish.ui
+[type: gettext/gsettings]applets/fish/org.gde2.panel.applet.fish.gschema.xml.in
+[type: gettext/ini]applets/fish/org.gde2.panel.FishApplet.gde2-panel-applet.in.in
+applets/notification_area/main.c
+applets/notification_area/na-tray-manager.c
+[type: gettext/ini]applets/notification_area/org.gde2.panel.NotificationAreaApplet.gde2-panel-applet.in.in
+[type: gettext/gsettings]applets/wncklet/org.gde2.panel.applet.window-list.gschema.xml.in
+[type: gettext/gsettings]applets/wncklet/org.gde2.panel.applet.workspace-switcher.gschema.xml.in
+[type: gettext/ini]applets/wncklet/org.gde2.panel.Wncklet.gde2-panel-applet.in.in
+applets/wncklet/showdesktop.c
+applets/wncklet/window-list.c
+[type: gettext/glade]applets/wncklet/window-list.ui
+applets/wncklet/window-menu.c
+applets/wncklet/wncklet.c
+applets/wncklet/workspace-switcher.c
+[type: gettext/glade]applets/wncklet/workspace-switcher.ui
+[type: gettext/gsettings]data/org.gde2.panel.gschema.xml.in
+[type: gettext/gsettings]data/org.gde2.panel.menubar.gschema.xml.in
+[type: gettext/gsettings]data/org.gde2.panel.object.gschema.xml.in
+[type: gettext/gsettings]data/org.gde2.panel.toplevel.gschema.xml.in
+gde2-panel/libegg/eggdesktopfile.c
+gde2-panel/libegg/eggsmclient.c
+gde2-panel/libpanel-util/panel-error.c
+gde2-panel/libpanel-util/panel-icon-chooser.c
+gde2-panel/libpanel-util/panel-launch.c
+gde2-panel/libpanel-util/panel-show.c
+gde2-panel/applet.c
+gde2-panel/button-widget.c
+gde2-panel/drawer.c
+gde2-panel/gde2-desktop-item-edit.c
+gde2-panel/gde2-panel.desktop.in.in
+gde2-panel/launcher.c
+gde2-panel/main.c
+gde2-panel/menu.c
+gde2-panel/nothing.cP
+gde2-panel/panel-action-button.c
+gde2-panel/panel-addto.c
+gde2-panel/panel-applet-frame.c
+gde2-panel/panel-bindings.c
+gde2-panel/panel-context-menu.c
+gde2-panel/panel-ditem-editor.c
+gde2-panel/panel-force-quit.c
+gde2-panel/panel-frame.c
+gde2-panel/panel-menu-bar.c
+gde2-panel/panel-menu-button.c
+gde2-panel/panel-menu-items.c
+gde2-panel/panel-profile.c
+gde2-panel/panel-properties-dialog.c
+[type: gettext/glade]gde2-panel/panel-properties-dialog.ui
+gde2-panel/panel-recent.c
+gde2-panel/panel-run-dialog.c
+[type: gettext/glade]gde2-panel/panel-run-dialog.ui
+gde2-panel/panel-separator.c
+gde2-panel/panel-shell.c
+gde2-panel/panel-stock-icons.c
+gde2-panel/panel-test-applets.c
+[type: gettext/glade]gde2-panel/panel-test-applets.ui
+gde2-panel/panel-toplevel.c
+gde2-panel/panel-util.c
+gde2-panel/panel.c
+libgde2-panel-applet/gde2-panel-applet.c
+libgde2-panel-applet/org.gde2.panel.TestApplet.gde2-panel-applet.in

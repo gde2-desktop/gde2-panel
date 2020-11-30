@@ -1,0 +1,91 @@
+1.14.2
+  * Some fixes for opensuse.layout
+  * Some more fixes and cleanups
+  * Translations update
+  * Make distcheck use currently selected GTK+ version
+
+1.14.1
+  * Fix missing focus for panel widgets (needed for Orca to work)
+  * Some more fixes and cleanups
+  * Translations update
+
+1.14.0
+  * Drop Gde2Conf migration script
+  * Add separate "Delete" button in reload applet dialog, and
+    make "Don't Reload" button do what it says (it won't delete
+    applet permanently now)
+  * Make max number of bookmarks in menu (before submenu is created)
+    configurable via GSettings key
+  * Make icon size of menu items configurable via GSettings key
+  * Change default menubar icon size to 22px
+  * Drop "Ubuntu hacks" (--enable-ubuntu build option) as Ubuntu
+    dropped that stuff long ago
+  * GTK+3: add several style classes
+  * GTK+3: add several css names for 3.20
+  * GTK+3: fix rendering of custom backgrounds with 3.18 and newer
+  * GTK+3: fix a lot of deprecations
+  * Some more fixes and cleanups
+  * Translations update
+  * Add Changelog generation
+
+1.12.2
+  * Drawer applet: fix occasional stretching of drawer's panel
+    over the entire screen
+  * Drawer applet: fix occasional crash on applet removing
+  * GTK+3: fix infinite loop with some themes
+  * Some more fixes
+
+1.12.1
+  * GTK+3: fix background in some themes
+  * Some more fixes
+
+1.12.0
+  * Require xrandr 1.3
+  * Add option to enable/disable week numbers in calendar
+  * Fix positions of locked applets on screen resolution change
+  * Retrieve strings directly from gschema (requires intltool 0.50.1)
+  * Switch to org.gnome.SessionManager (used by action buttons)
+  * GTK+3: add a style class for applets to follow panel-menu-bar
+  * Multiple GTK+3 fixes
+  * Some more fixes and cleanups
+
+1.10.1
+  * Fish and clock applets: help fixes
+  * Drawer applet: fix opening after adding applets to it
+  * Force Quit applet: fix desktop freezing with GTK+3
+  * Some more GTK+3 fixes
+  * Some code cleanup
+  * Translations updates
+
+1.10.0
+  * Gtk3, Fix deprecated use of gdk pointer api
+  * Gtk3, Port all GtkStyle to GtkStyleContext
+  * Gtk3, Port gtk_rc_parse_string to GtkCssProvider
+  * Gtk3, Several small fixes
+  * Several more fixes from monsta
+  * GDK_KEY_* is also in Gtk+2.24
+  * showdesktop: Fix the size of the icon
+  * clock: Check allocated size before creating the shadow pixbuf
+  * applet: Disconnect show and deactivate menu signals before destroying the applet menu
+  * Add a gtkimage with the current pixbuf to button-widget
+  * Fix implicit declaration of function of gdk_x11_set_sm_client_id
+  * panel-addto: Remove the vbox as it is redundant.
+  * na: Fix handling of SYSTEM_TRAY_CANCEL_MESSAGE
+  * Use gtk icon cache instead of custom one
+  * Several small fixes by monsta
+
+1.8.0
+  * Added support for multiple layouts, stored in $(datadir)/gde2-panel/layouts
+  * Added --layout parameter
+  * Add hook to support run dialog and main menu opening with metacity
+  * Switch to libwnck
+  * Use yelp-tools instead of gde2-doc-utils
+
+1.6.0
+  * add --run-dialog option to open run dialog
+  * migration to gsettings
+  * panel-menu-button: supports changed notify for new "has-arrow" key
+  * clock applet: removed evolution support
+  * default layout: default panel layout is loaded from
+    $(datadir)/gde2-panel/panel-default-layout.gde2. You can ovverride it by
+    providing $(datadir)/gde2-panel/panel-default-layout.dist.

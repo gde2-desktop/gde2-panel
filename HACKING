@@ -1,0 +1,19 @@
+Hacking on gde2-panel
+======================
+
+ + The development occurs in git:
+
+     https://github.com/gde2-desktop/gde2-panel
+
+   For information on how to access GDE2 git please read:
+
+     http://wiki.gde2-desktop.org
+
+ + Please send patches as bug reports in GDE2 Bugzilla:
+
+     https://github.com/gde2-desktop/gde2-panel/issues
+
+ + Please try and send a patch against a recent version of this package.
+   Patches (pull requests) against git master are most preferable.
+
+ + Don't commit any but the most trivial patches without approval.

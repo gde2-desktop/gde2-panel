@@ -1,0 +1,17 @@
+[Applet Factory]
+Id=FishAppletFactory
+InProcess=@IN_PROCESS@
+Location=@LOCATION@
+_Name=Wanda Factory
+_Description=From Whence That Stupid Fish Came
+
+[FishApplet]
+_Name=Fish
+_Description=Display a swimming fish or another anigde2d creature
+Icon=gde2-panel-fish
+Gde2ComponentId=OAFIID:GDE2_FishApplet;
+X-GDE2-Bugzilla-Bugzilla=GDE2
+X-GDE2-Bugzilla-Product=gde2-panel
+X-GDE2-Bugzilla-Component=fish
+X-GDE2-Bugzilla-Version=@VERSION@
+X-GDE2-Bugzilla-OtherBinaries=fish-applet-2
