@@ -36,7 +36,6 @@
 #include <libpanel-util/panel-icon-chooser.h>
 #include <libpanel-util/panel-show.h>
 
-#include <libgde2-desktop/gde2-colorbutton.h>
 
 #include "nothing.h"
 #include "panel-profile.h"
@@ -329,7 +328,7 @@ SETUP_TOGGLE_BUTTON ("arrows_toggle",      arrows_toggle,      enable_arrows,   
 
 static void
 panel_properties_dialog_color_changed (PanelPropertiesDialog *dialog,
-				       Gde2ColorButton        *color_button)
+				       GtkColorButton        *color_button)
 {
 #if GTK_CHECK_VERSION (3, 0, 0)
 	GdkRGBA color;
@@ -340,11 +339,11 @@ panel_properties_dialog_color_changed (PanelPropertiesDialog *dialog,
 	g_assert (dialog->color_button == GTK_WIDGET (color_button));
 
 #if GTK_CHECK_VERSION (3, 0, 0)
-	gde2_color_button_get_rgba (color_button, &color);
+	gtk_color_button_get_rgba (color_button, &color);
 	panel_profile_set_background_gdk_rgba (dialog->toplevel, &color);
 	panel_properties_dialog_opacity_changed (dialog);
 #else
-	gde2_color_button_get_color (color_button, &color);
+	gtk_color_button_get_color (color_button, &color);
 	panel_profile_set_background_gdk_color (dialog->toplevel, &color);
 #endif
 }
@@ -366,13 +365,10 @@ panel_properties_dialog_setup_color_button (PanelPropertiesDialog *dialog,
 
 	panel_profile_get_background_color (dialog->toplevel, &color);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
-	gde2_color_button_set_rgba (GDE2_COLOR_BUTTON (dialog->color_button),
-				    &color);
-#else
-	gde2_color_button_set_color (GDE2_COLOR_BUTTON (dialog->color_button),
+
+	gtk_color_button_set_color (GTK_COLOR_BUTTON (dialog->color_button),
 				     &(color.gdk));
-#endif
+
 
 	g_signal_connect_swapped (dialog->color_button, "color_set",
 				  G_CALLBACK (panel_properties_dialog_color_changed),
@@ -716,33 +712,19 @@ static void
 panel_properties_dialog_update_background_color (PanelPropertiesDialog *dialog,
 						 gchar                 *str_color)
 {
-#if GTK_CHECK_VERSION (3, 0, 0)
-	GdkRGBA new_color;
-	GdkRGBA old_color;
-
-	if (!gdk_rgba_parse (&new_color, str_color))
-		return;
-
-	gde2_color_button_get_rgba (GDE2_COLOR_BUTTON (dialog->color_button),
-				    &old_color);
-
-	if (!gdk_rgba_equal (&old_color, &new_color))
-		gde2_color_button_set_rgba (GDE2_COLOR_BUTTON (dialog->color_button),
-					    &new_color);
-#else
 	GdkColor new_color = { 0, };
 	GdkColor old_color;
 
 	if (!gdk_color_parse (str_color, &new_color))
 		return;
 
-	gde2_color_button_get_color (GDE2_COLOR_BUTTON (dialog->color_button),
+	gtk_color_button_get_color (GTK_COLOR_BUTTON (dialog->color_button),
 				    &old_color);
 
 	if (!gdk_color_equal (&old_color, &new_color))
-		gde2_color_button_set_color (GDE2_COLOR_BUTTON (dialog->color_button),
+		gtk_color_button_set_color (GTK_COLOR_BUTTON (dialog->color_button),
 					    &new_color);
-#endif
+
 }
 
 #if !GTK_CHECK_VERSION(3, 0, 0)
